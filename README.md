@@ -107,6 +107,8 @@ $ python
 >>> import example_pkg
 >>> example_pkg.function_from_init()
 >>> example_pkg.function_from_example_module()
+>>> from example_pkg import example_module2
+>>> example_module2.function_from_example_module()
 >>> exit()
 ```
 
