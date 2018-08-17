@@ -88,8 +88,40 @@ installed out-of-tree.
 
 Go read about this. It must be important.
 
+# Install package
+
+### From current directory
+
+The package can be installed directly from the development directory.
+In our case, install to the virtual environment:
+
+```
+$ cd example_pkg
+$ source venv/bin/activate
+$ pip install .
+```
+
+You may then use the package as follows:
+```
+$ python
+>>> import example_pkg
+>>> example_pkg.example_function()
+>>> exit()
+```
+
+Uninstall using:
+```
+$ pip uninstall example_pkg
+```
+
+
+## From distribution Files
+
+TODO
+
 ## Links
 
   * [Further reading](https://packaging.python.org/guides/distributing-packages-using-setuptools/)
   * [Sample Project](https://github.com/pypa/sampleproject/blob/master/setup.cfg)
   * [What is egg-info](https://stackoverflow.com/questions/3779915/why-does-python-setup-py-sdist-create-unwanted-project-egg-info-in-project-r)
+  * [Minimal package](http://python-packaging.readthedocs.io/en/latest/minimal.html)
