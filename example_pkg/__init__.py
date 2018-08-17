@@ -7,4 +7,4 @@ from .example_module import example_function2
 # from . import example_module
 
 def example_function():
-    print("Hello! This is an example function in __init__.py")
+    return "Hello! This is an example function in __init__.py"
