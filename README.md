@@ -105,7 +105,8 @@ You may then use the package as follows:
 ```
 $ python
 >>> import example_pkg
->>> example_pkg.example_function()
+>>> example_pkg.function_from_init()
+>>> example_pkg.function_from_example_module()
 >>> exit()
 ```
 

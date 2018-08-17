@@ -2,12 +2,12 @@ from unittest import TestCase
 
 import example_pkg
 
-class TestExample(TestCase):
+class TestInit(TestCase):
     def test_is_string(self):
-        s = example_pkg.example_function()
+        s = example_pkg.function_from_init()
         self.assertTrue(isinstance(s, str))
 
-class TestExample2(TestCase):
+class TestExampleModule(TestCase):
     def test_is_string(self):
-        s = example_pkg.example_function2()
+        s = example_pkg.function_from_example_module()
         self.assertTrue(isinstance(s, str))
