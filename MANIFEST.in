@@ -1,0 +1,4 @@
+# Detail what extra files to include in the source distribution
+# Python seems to automatically include everything in the root directory (?)
+# It does not descend into subdirectories.
+include README.md
