@@ -88,7 +88,7 @@ installed out-of-tree.
 
 Go read about this. It must be important.
 
-# Install package
+## Install package
 
 ### From current directory
 
@@ -115,9 +115,35 @@ $ pip uninstall example_pkg
 ```
 
 
-## From distribution Files
+### From distribution Files
 
 TODO
+
+
+## Tests
+
+See [readthedocs](https://python-packaging.readthedocs.io/en/latest/testing.html)
+for a basic introduction.
+
+The most straightforward way is to follow the guide's recommendation and use `Nose`:
+
+```
+$ nosetests
+```
+Wild. It just worked.
+
+I've integrated `nose` into `setup.py` so one can also run:
+
+```
+$ setup.py --test
+```
+
+This seems to both build the package and run the tests.
+
+It is possible to load unit tests manually in the test file.
+I think you might need a `TestLoader` and `Runner` from `UnitTest`.
+This sounds like too much work.
+
 
 ## Links
 
