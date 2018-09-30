@@ -18,6 +18,11 @@ class TestExampleModule2(TestCase):
         s = example_module2.function_from_example_module2()
         self.assertTrue(isinstance(s, str))
 
+import example_pkg.example_class
+class TestExampleClass(TestCase):
+    def test_init(self):
+        example_pkg.example_class.ExampleClass()
+
 class TestSyntaxExample(TestCase):
     @classmethod
     def setUpClass(cls):
