@@ -8,6 +8,8 @@ from .example_module import function_from_example_module
 # example_pkg.example_module2.function_from_example_module2()
 from . import example_module2
 
+from . import example_class
+
 # This function can be called using:
 # example_pkg.function_from_init()
 def function_from_init():
