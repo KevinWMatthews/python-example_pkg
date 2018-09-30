@@ -6,6 +6,7 @@ from .example_module import function_from_example_module
 
 # This requires you to call:
 # example_pkg.example_module2.function_from_example_module2()
+# unless you import example_module2 directly.
 from . import example_module2
 
 # This makes the example_class module accessible after importing example_pkg
