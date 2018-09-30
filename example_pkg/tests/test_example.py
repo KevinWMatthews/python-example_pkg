@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, skip
 
 import example_pkg
 from example_pkg import example_module2
@@ -33,6 +33,6 @@ class TestSyntaxExample(TestCase):
     def tearDownClass(cls):
         pass
 
-    @unittest.skip('Must put message here')
+    @skip('Must put message here')
     def test_will_be_skipped(self):
         pass
