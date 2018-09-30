@@ -15,7 +15,18 @@ Install your system's python3 into the virtual environment, activate it, and the
 ```
 $ virtualenv --python=python3 venv
 $ source venv/bin/activate
+```
+
+If you are activating an existing virtual environment, run:
+```
 $ pip install --requirement requirements.txt
+```
+
+If you are create a virtual environment from scratch, run:
+```
+$ pip install <package>
+$ pip install nose
+# etc
 ```
 
 When finished, deactivate the venv using:
