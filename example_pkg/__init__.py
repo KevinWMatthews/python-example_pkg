@@ -8,7 +8,14 @@ from .example_module import function_from_example_module
 # example_pkg.example_module2.function_from_example_module2()
 from . import example_module2
 
-from . import example_class
+# This makes the example_class module accessible after importing example_pkg
+# Must call example_pkg.example_class.ExampleClass
+# from . import example_class
+
+# This makes ExampleClass accessible after importing example_pkg
+# Can call example_pkg.ExampleClass
+from .example_class import ExampleClass
+
 
 # This function can be called using:
 # example_pkg.function_from_init()
